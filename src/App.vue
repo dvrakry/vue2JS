@@ -23,16 +23,30 @@
       </div>
     </div>
   </nav>
+
+  
+  
+  <router-view :블로그글 = "블로그글"></router-view>
+
+  <!-- <List :블로그글 = "블로그글"/> -->
+
 </template>
 
 <script>
 
+// import List from './components/List.vue';
+import blog from './assets/blog.js';
 
 export default {
   name: 'App',
+  data(){
+    return{
+      블로그글 : blog,
+    }
+  },
   components: {
-    
-  }
+    // List : List,
+  },
 }
 </script>
 
