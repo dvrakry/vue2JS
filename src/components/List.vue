@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h5>{{블로그글[0].title}}</h5>
+    <h5 @click="$router.push('/detail/{{$route.params.id}}')">{{블로그글[0].title}}</h5>
     <p>{{블로그글[0].date}}</p>
   </div>
   <div>
